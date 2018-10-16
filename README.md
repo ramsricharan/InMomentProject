@@ -76,7 +76,7 @@ expects when the “return” key is tapped on the keyboard)**
 ---
 ## Screenshots
 ### iOS
-<p align="center">
+<p float="left">
   <img src="iOS/iOS%20-%20Screenshots/iOS%20-%20Home%20Screen.png" width="200">
   <img src="iOS/iOS%20-%20Screenshots/iOS%20-%20Home%20Screen%202.png" width="200">
   <img src="iOS/iOS%20-%20Screenshots/iOS%20%20-Loading%20Screen.png" width="200">
