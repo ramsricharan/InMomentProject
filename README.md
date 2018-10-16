@@ -1,5 +1,5 @@
 # InMoment Project
-Designed and Developed a dictionary bot for the take home project at InMoment. Available for both iOS and Android
+Designed and Developed a dictionary bot app as part of the take home project at InMoment. Available for both iOS and Android
 
 
 ## Basic idea.
@@ -63,5 +63,10 @@ expects when the “return” key is tapped on the keyboard)**
     
  ---   
 ## Bonus
-    
+-  **Progress Dialog**
+    - To let user know that the app is searching for the definition, my app shows a progress dialog. 
+    - Implemented my own custom progress dialog box in iOS and used the default progress dialog for Android app.
+     
+- **Cancel search**
+  - Provided a cancel button so that user can cancel the ongoing search if they wish to.
     
