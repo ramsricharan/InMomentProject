@@ -9,6 +9,20 @@
 import Foundation
 import UIKit
 
+
+extension UIViewController {
+    func hideKeyboardWhenTappedAround() {
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIViewController.dismissKeyboard))
+        tap.cancelsTouchesInView = false
+        view.addGestureRecognizer(tap)
+    }
+    
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
+    }
+}
+
+
 extension UIColor
 {
     static let myWhite = UIColor(red: 255/255, green: 255/255, blue: 255/255, alpha: 0.8)

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class RobotVC : UIViewController, searchEventProtocol {
+class RobotVC : UIViewController, searchEventProtocol, UITextViewDelegate {
 
     private var homePageViews : HomePageViews!
     private var robotSearch : RobotSearch!
@@ -21,8 +21,12 @@ class RobotVC : UIViewController, searchEventProtocol {
                 
         homePageViews = HomePageViews(viewController : self)
         homePageViews?.onSearchClicked(action: #selector(onSearchButtonClicked))
-        
+                
         robotSearch = RobotSearch(delegate: self)
+        
+        // Hide keyboard when screen is tapped
+        self.hideKeyboardWhenTappedAround()
+        
     }
 
     // To make the status Bar light color
@@ -49,6 +53,16 @@ class RobotVC : UIViewController, searchEventProtocol {
     {
         robotSearch.cancelSearch()
     }
+    
+    
+    
+    func textFieldShouldReturn(textField: UITextField) -> Bool
+    {
+    textField.resignFirstResponder()  //if desired
+    onSearchButtonClicked()
+    return true
+    }
+    
     
     
     

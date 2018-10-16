@@ -17,6 +17,7 @@ class HomePageViews
     init(viewController : UIViewController)
     {
         self.currentViewController = viewController
+        keywordTextView.delegate = viewController as? UITextFieldDelegate
         arrangeViews()
     }
     
