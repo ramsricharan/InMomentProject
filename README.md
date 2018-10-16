@@ -63,7 +63,7 @@ expects when the “return” key is tapped on the keyboard)**
     user can hide the keyboard by tapping anywhere on the screen.*
     - [x] *Implemented **UITextViewDelegate** to handle keyboard "return" button taps.*
     
- ---   
+---   
 ## Bonus
 -  **Progress Dialog**
     - To let the user know that the app is searching for the definition, my app shows a progress dialog. 
@@ -73,3 +73,13 @@ expects when the “return” key is tapped on the keyboard)**
 - **Cancel search**
   - Provided a cancel button so that user can interrupt the ongoing search if they wish to.
     
+---
+## Screenshots
+### iOS
+![](iOS/iOS - Screenshots/iOS - Home Screen.png)
+
+
+
+
+
+
