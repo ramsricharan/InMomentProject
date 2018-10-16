@@ -76,7 +76,7 @@ expects when the “return” key is tapped on the keyboard)**
 ---
 ## Screenshots
 ### iOS
-![](iOS/iOS%20-%20Screenshots/iOS%20-%20Home%20Screen.png)
+![](iOS/iOS%20-%20Screenshots/iOS%20-%20Home%20Screen.png =20x100)
 
 
 
