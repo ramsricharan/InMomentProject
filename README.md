@@ -75,6 +75,14 @@ expects when the “return” key is tapped on the keyboard)**
     
 ---
 ## Screenshots
+### Android
+<p float="left">
+  <img src="Android/Screenshots/Android-HomeScreen.png" width="200">
+  <img src="Android/Screenshots/Android-HomeScreen2.png" width="200">
+  <img src="Android/Screenshots/Android-LoadingScreen.png" width="200">
+  <img src="Android/Screenshots/Android-ResultsScreen.png" width="200">
+</p>
+
 ### iOS
 <p float="left">
   <img src="iOS/iOS%20-%20Screenshots/iOS%20-%20Home%20Screen.png" width="200">
