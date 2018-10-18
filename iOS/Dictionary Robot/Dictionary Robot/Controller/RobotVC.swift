@@ -58,9 +58,9 @@ class RobotVC : UIViewController, searchEventProtocol, UITextViewDelegate {
     
     func textFieldShouldReturn(textField: UITextField) -> Bool
     {
-    textField.resignFirstResponder()  //if desired
-    onSearchButtonClicked()
-    return true
+        textField.resignFirstResponder()
+        onSearchButtonClicked()
+        return true
     }
     
     

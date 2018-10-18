@@ -47,6 +47,13 @@ class ResultsPageViews {
             ////////////////////// UI Components  //////////////////////
     //------------------------------------------------------------------------------
     
+    // Base ScrollView
+    private let baseScrollView : UIScrollView = {
+        let scrollView = UIScrollView()
+        scrollView.translatesAutoresizingMaskIntoConstraints = false
+        return scrollView
+    }()
+    
     // Base StackView
     private let baseStackView : UIStackView = {
         let stackView = UIStackView()
@@ -123,11 +130,18 @@ class ResultsPageViews {
         let rootView : UIView = currentViewController.view
         rootView.backgroundColor = UIColor.myBackgroundColor
         
+        // Add Scroll View to the rootView
+        rootView.addSubview(baseScrollView)
+        baseScrollView.topAnchor.constraint(equalTo: rootView.topAnchor, constant: 8).isActive = true
+        baseScrollView.heightAnchor.constraint(equalTo: rootView.heightAnchor, constant: -72).isActive = true
+        baseScrollView.widthAnchor.constraint(equalTo: rootView.widthAnchor, constant: -8).isActive = true
+        baseScrollView.centerXAnchor.constraint(equalTo: rootView.centerXAnchor).isActive = true
+        
         // Add stackView to the rootView
-        rootView.addSubview(baseStackView)
-        baseStackView.topAnchor.constraint(equalTo: rootView.topAnchor, constant: 24).isActive = true
-        baseStackView.leftAnchor.constraint(equalTo: rootView.leftAnchor, constant: 8).isActive = true
-        baseStackView.rightAnchor.constraint(equalTo: rootView.rightAnchor, constant: -8).isActive = true
+        baseScrollView.addSubview(baseStackView)
+        baseStackView.topAnchor.constraint(equalTo: baseScrollView.topAnchor, constant: 16).isActive = true
+        baseStackView.bottomAnchor.constraint(equalTo: baseScrollView.bottomAnchor, constant: -8).isActive = true
+        baseStackView.widthAnchor.constraint(equalTo: baseScrollView.widthAnchor, constant: -8).isActive = true
 
         
         // Add Title label View
@@ -144,6 +158,7 @@ class ResultsPageViews {
         
         // Add the button
         rootView.addSubview(newSearchButton)
+        newSearchButton.topAnchor.constraint(equalTo: baseScrollView.bottomAnchor, constant: 8).isActive = true
         newSearchButton.bottomAnchor.constraint(equalTo: rootView.bottomAnchor, constant: -16).isActive = true
         newSearchButton.heightAnchor.constraint(equalToConstant: 40).isActive = true
         newSearchButton.widthAnchor.constraint(equalTo: rootView.widthAnchor, multiplier: 0.7).isActive = true
@@ -193,6 +208,7 @@ extension UILabel
         label.text = title
         label.textColor = UIColor.myGreen
         label.textAlignment = .right
+        label.numberOfLines = 0
         label.font = UIFont.boldSystemFont(ofSize: 18)
     }
     
