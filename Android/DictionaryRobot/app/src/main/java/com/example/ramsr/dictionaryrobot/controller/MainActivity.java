@@ -64,6 +64,7 @@ public class MainActivity extends AppCompatActivity implements SearchEventInterf
         searchButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                keywordEditText.clearFocus();
                 if(!keywordEditText.getText().toString().trim().isEmpty())
                 {
                     checkAndSearch();
