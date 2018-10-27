@@ -2,7 +2,7 @@
 Designed and Developed a dictionary bot app as part of the take home project at InMoment. Available for both iOS and Android
 
 
-## Basic idea.
+## Basic idea
 - User enters a word to which they need the definition for and our robot will search for the given word.
 - Our Robot has mechanical arms to turn the pages and a camera to see the words. So it can do a total of 8 tasks
 as follows.
@@ -15,7 +15,7 @@ as follows.
  - We need to traverse through the dictionary using these 8 operations to find the required word.
     
 ------
-## Technical Information:
+## Technical Information
   - ### Android
     - Used Java Programming language to develop the app.
     - Used **Retrofit** Library to handle REST API calls.
